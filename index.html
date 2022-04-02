@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Etch-a-Sketch</title>
+
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div id="mainContainer">
+      <div id="allTools">
+        <div id="toolContainer">
+          <button class="btn , tool , pencil , active">Pencil</button>
+          <button class="btn , tool , eraser">Eraser</button>
+          <button class="btn , tool , rainbow">Rainbow</button>
+          <button class="btn , clear">Clear</button>
+        </div>
+
+        <div id="colorContainer">
+          <div id="colorDiv">
+            <input id="colorPicker" type="color" />
+          </div>
+        </div>
+
+        <div id="scaleContainer">
+          <input
+            id="scaleRange"
+            type="range"
+            min="16"
+            max="64"
+            value="16"
+            step="1"
+          />
+        </div>
+      </div>
+      <div id="container">
+        <div id="grid" class="grid"></div>
+      </div>
+      <div id="footer">
+        <a
+          class="link"
+          href="https://github.com/RodrigoAlv97/etch-a-sketch"
+          target="_blank"
+          >GitHub</a
+        >
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
